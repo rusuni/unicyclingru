@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="3.0" type="template" client="site">
+	<name>RSMetro</name>
+	<creationDate>16 November 2012</creationDate>
+	<author>gdv</author>
+	<authorEmail>info@redsoft.ru</authorEmail>
+	<authorUrl>http://www.redsoft.ru</authorUrl>
+	<copyright>Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>1.0.0</version>
+	<description>template RSMetro</description>
+	<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+	</files>
+	<positions>
+		<position>topmenu</position>
+		<position>mainmenu</position>
+		<position>footermenu</position>
+		<position>social</position>
+		<position>seargh</position>
+		<position>slider</position>
+		<position>breadcrumb</position>
+		<position>right</position>
+		<position>left</position>
+		<position>header_a</position>
+		<position>header_b</position>
+		<position>header_c</position>
+		<position>top_a</position>
+		<position>top_b</position>
+		<position>top_c</position>
+		<position>bottom_a</position>
+		<position>bottom_b</position>
+		<position>bottom_c</position>
+		<position>footer_a</position>
+		<position>footer_b</position>
+		<position>footer_c</position>
+	</positions>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.tpl_rsmetro.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.tpl_rsmetro.sys.ini</language>
+		<language tag="ru-RU">language/ru-RU/ru-RU.tpl_rsmetro.ini</language>
+		<language tag="ru-RU">language/ru-RU/ru-RU.tpl_rsmetro.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="logoFile" class="" type="media" default="" label="TPL_RSMETRO_LOGO_LABEL" description="TPL_RSMETRO_LOGO_DESC" />					
+				<field name="sitetitle"  type="text" default="" label="JGLOBAL_TITLE" description="JFIELD_ALT_PAGE_TITLE_LABEL" filter="string" />
+				<field name="sitedescription"  type="text" default="" label="JGLOBAL_DESCRIPTION" description="JGLOBAL_SUBHEADING_DESC" filter="string" />
+				<field name="googleFont" type="radio" class="btn-group" default="1" label="TPL_RSMETRO_FONT_LABEL" description="TPL_RSMETRO_FONT_DESC" >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="googleFontName" class="" type="text" default="Segoe UI" label="TPL_RSMETRO_FONT_NAME_LABEL" description="TPL_RSMETRO_FONT_NAME_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
