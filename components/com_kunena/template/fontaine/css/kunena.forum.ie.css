@@ -1,0 +1,17 @@
+﻿ul.autocompleter-choices {
+	margin: 0;
+}
+#Kunena div#kmod-container a.button {
+	padding: 3px 12px;
+}
+
+#Kunena .kattachment .kattachment-remove.kbutton,
+#Kunena .kattachment .kattachment-insert.kbutton {
+	padding: 2px 10px 3px !important; 
+}
+
+#Kunena div#kmod-container a.button {
+	padding: 4px 12px 3px 12px;
+	display: inline-block;
+	vertical-align: top;
+}

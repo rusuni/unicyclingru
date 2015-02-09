@@ -1,0 +1,106 @@
+/**
+* @version		JF_KU_DTF_078
+* @author		JoomForest http://www.joomforest.com
+* @copyright	Copyright (C) 2011-2014 JoomForest.com
+* @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+*/
+
+@import "jf_00_mixins.less";
+@import "jf_00_variables.less";
+
+div.kpbox {
+	border-color: #ddd;
+}
+#kprofilebox {
+	.kbody {
+		border-color: #ddd;
+		.kprofileboxcnt {
+			padding: 10px 7px;
+			background-color: #F9F9F9;
+			.input {
+				span {
+					margin: 0 5px 0 0;
+					display: inline-block;
+				}
+				.inputbox {
+					padding: 6px;
+					border-color: #DDD;
+				}
+				.kbutton {
+					margin: 0;
+					border: 0;
+					background: @jf_ku_MainColor;
+					color: #FFF;
+					display: inline-block;
+					line-height: 28px;
+					height: 28px;
+					padding: 0 10px;
+					.border-radius(2px);
+					outline: 0;
+					&:active {
+						.box-shadow(~"inset 0 1px 7px rgba(0, 0, 0, 0.3),0 1px 0 #FFF");
+					}
+				}
+			}
+			.klink-block {
+				font-size: 11px;
+				padding: 6px 2px 0 2px;
+				a {
+					&:hover {
+						color: @jf_ku_MainColor !important;
+						text-decoration: underline;
+					}
+				}
+				span {
+					margin: 0 5px 0 0;
+				}
+			}
+			&:hover {
+				background-color: #fff;
+			}
+		}
+		.kprofilebox-left {
+			border-right-color: #E5E5E5;
+		}
+		.kms {
+			font-size: 11px;
+		}
+		ul.kprofilebox-welcome li input.kbutton {
+			margin: 0;
+			border: 0;
+			background: @jf_ku_MainColor;
+			color: #FFF;
+			display: inline-block;
+			line-height: 26px;
+			height: 26px;
+			padding: 0 10px;
+			.border-radius(2px);
+			outline: 0;
+			&:active {
+				.box-shadow(~"inset 0 1px 7px rgba(0, 0, 0, 0.3),0 1px 0 #FFF");
+			}
+		}
+		.kprofilebox-link li {
+			height: auto;
+			line-height: 0;
+			background: 0 !important;
+			margin: 0;
+			padding: 0 5px !important;
+			a {
+				margin: 0;
+				border: 0;
+				background: @jf_ku_MainColor !important;
+				color: #FFF !important;
+				display: inline-block;
+				line-height: 28px;
+				height: 28px;
+				padding: 0 10px;
+				.border-radius(2px);
+				outline: 0;
+				&:active {
+					.box-shadow(~"inset 0 1px 7px rgba(0, 0, 0, 0.3),0 1px 0 #FFF");
+				}
+			}
+		}
+	}
+}

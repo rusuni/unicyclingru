@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE kinstall>
+<kinstall type="kunena-template" version="2.0">
+	<name>JF Business</name>
+	<creationDate>09.12.14</creationDate>
+	<version>3.0 - k 3.0.6</version>
+	<author>JoomForest.com</author>
+	<authorEmail>support@joomforest.com</authorEmail>
+	<authorUrl>http://www.joomforest.com</authorUrl>
+	<copyright>JoomForest.com</copyright>
+	<license>GNU/GPL</license>
+	<description>JoomForest.com - JF Business Kunena 3 Template<![CDATA[<style>.jf_title,.jf_sub_title{color:#fff;background:#048A96;padding:5px 8px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;margin:-7px;display:block;text-align:center}.jf_sub_title{background:#999;text-align:left;font-weight:100}</style>]]></description>
+	<thumbnail>template_thumbnail.png</thumbnail>
+	<config>
+		<field type="spacer" label="Kunena Core Features" class="jf_title" />
+			<field name="displayMenu" type="list" default="1"
+				label="COM_KUNENA_TEMPLATE_DISPLAY_MENU"
+				description="COM_KUNENA_TEMPLATE_DISPLAY_MENU_DESC"
+			>
+				<option value="0">COM_KUNENA_NO</option>
+				<option value="1">COM_KUNENA_YES</option>
+			</field>
+
+			<field name="avatarPosition" type="list" default="left"
+				label="COM_KUNENA_TEMPLATE_PROFILE_POSITION"
+				description="COM_KUNENA_TEMPLATE_PROFILEPOSITION_DESC"	
+			>
+				<option value="left">COM_KUNENA_TEMPLATE_LEFT</option>
+				<option value="top">COM_KUNENA_TEMPLATE_TOP</option>
+				<option value="right">COM_KUNENA_TEMPLATE_RIGHT</option>
+				<option value="bottom">COM_KUNENA_TEMPLATE_BOTTOM</option>
+			</field>
+			<field name="templatebyText" type="text" default="Template By" label="'Template By' Text" description="This is copyright text at bottom: 'Template By'" />
+			<field name="templatebyName" type="text" default="JoomForest" label="Template Author Name Text" description="This is template author name copyright text at bottom: 'JoomForest'" />
+			<field name="templatebyLink" class="long" type="text" default="http://www.joomforest.com" label="Template Author Link" description="This is template author copyright link at bottom: 'http://www.joomforest.com'" />
+			<!-- Required avatar sizes -->
+			<field name="avatarSizeXThumb" type="text" default="36" label="Avatar Max Size-X Thumb" description="Set avatar maximum 'Size-X Thumb' in pixels (Default is - 36). NOTE! If you dont know what you are doing, dont change it." />
+			<field name="avatarSizeYThumb" type="text" default="36" label="Avatar Max Size-Y Thumb" description="Set avatar maximum 'Size-Y Thumb' in pixels (Default is - 36). NOTE! If you dont know what you are doing, dont change it." />
+			<field name="avatarSizeXWelcome" type="text" default="72" label="Avatar Max Size-X Welcome" description="Set avatar maximum 'Size-X Welcome' in pixels (Default is - 72). NOTE! If you dont know what you are doing, dont change it." />
+			<field name="avatarSizeYWelcome" type="text" default="72" label="Avatar Max Size-Y Welcome" description="Set avatar maximum 'Size-Y Welcome' in pixels (Default is - 72). NOTE! If you dont know what you are doing, dont change it." />
+			<field name="avatarSizeXList" type="text" default="36" label="Avatar Max Size-X List" description="Set avatar maximum 'Size-X List' in pixels (Default is - 36). NOTE! If you dont know what you are doing, dont change it." />
+			<field name="avatarSizeYList" type="text" default="36" label="Avatar Max Size-Y List" description="Set avatar maximum 'Size-Y List' in pixels (Default is - 36). NOTE! If you dont know what you are doing, dont change it." />
+			<field name="avatarSizeXPost" type="text" default="144" label="Avatar Max Size-X Post" description="Set avatar maximum 'Size-X Post' in pixels (Default is - 144). NOTE! If you dont know what you are doing, dont change it." />
+			<field name="avatarSizeYPost" type="text" default="144" label="Avatar Max Size-Y Post" description="Set avatar maximum 'Size-Y Post' in pixels (Default is - 144). NOTE! If you dont know what you are doing, dont change it." />
+			<field name="avatarSizeXProfile" type="text" default="200" label="Avatar Max Size-X Profile" description="Set avatar maximum 'Size-X Profile' in pixels (Default is - 200). NOTE! If you dont know what you are doing, dont change it." />
+			<field name="avatarSizeYProfile" type="text" default="200" label="Avatar Max Size-Y Profile" description="Set avatar maximum 'Size-Y Profile' in pixels (Default is - 200). NOTE! If you dont know what you are doing, dont change it." />
+
+		<field type="spacer" label="JF - Main Features" class="jf_title" />
+			<field name="jf_ku_jQuery" type="list" default="0" label="jQuery Library" description="If you dont use jQuery library on your website, than enable it. (NOTE! if you use our joomla template and you use 'jQuery Easy' plugin, you don't need to enable it.)">
+				<option value="1">Enable</option>
+				<option value="0">Disable</option>
+			</field>
+			<field name="jf_ku_jQuerynoConflict" type="list" default="0" label="jQuery noConflict Mode" description="If you dont use jQuery 'noConflict' mode on your website, than enable it. (NOTE! if you use our joomla template and you use 'jQuery Easy' plugin, you don't need to enable it.)">
+				<option value="1">Enable</option>
+				<option value="0">Disable</option>
+			</field>
+			<!-- jf logo -->
+			<field type="spacer" label="JF Logo" class="jf_sub_title" />
+				<field name="jf_ku_JFlogo" type="list" default="1" label="JF Logo" description="Enable of not 'JF Logo' feature on your website at bottom">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="jf_ku_JFlogoLink" type="text" class="medium" default="http://www.joomforest.com" label="Type 'JF Logo' Link" description="Type 'JF Logo' Link (Default is - 'http://www.joomforest.com')" />
+				<field name="jf_ku_JFlogoTitle" type="text" class="medium" default="Designed by JoomForest.com" label="Type 'JF Logo' Title" description="Type 'JF Logo' Title (Default is - 'www.JoomForest.com')" />
+		
+		<field type="spacer" label="JF - Styles" class="jf_title" />
+		
+			<field type="spacer" label="Google Fonts Feature" class="jf_sub_title" />
+				<field name="jf_ku_GoogleWebFont" type="list" default="1" label="Google Web Font Library" description="Enable of not 'Google Font Library' on your website">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="jf_ku_GoogleFontSheet" type="text" class="long" default="" label="Type Google Font Stylesheet" description="Type Google Font Stylesheet (Default is - '//fonts.googleapis.com/css?family=Yanone+Kaffeesatz'). For other fonts visit - http://www.google.com/webfonts (NOTE! - Leave it Empty if you dont want to add Google font StyleSheet)" />
+				<field name="jf_ku_GoogleFontTags" type="textarea" class="jf_new_largest jf_new_h_200" default="#Kunena #jumpto .inputbox,#Kunena #timeselect .inputboxusl,#Kunena .kheader h2,#Kunena .kheader h2 a,#Kunena .kheader h2 span,#Kunena .kblock.kwhoisonline .ktitle,#Kunena .krowmoderation select,#Kunena #kforumsearch select.ks,#Kunena #kforumsearch #categorylist,#Kunena #kforumsearch input.ks,#Kunena #kprofile .jf_ku_modalbtn,#Kunena #kprofile-edit select,#Kunena #ktop ul.menu li a span,#Kunena h3 span" label="Type Google Font Tags" description="Type tags classes which you want to apply google font" />
+				<field name="jf_ku_GoogleFontFace" type="text" default="Yanone Kaffeesatz" label="Type Google Font Face" description="Type Google Font Face (Default is - Yanone Kaffeesatz). For other fonts visit - http://www.google.com/webfonts" />
+			
+			<field type="spacer" label="Unlimited Colors Feature" class="jf_sub_title" />
+				<field name="jf_ku_UnlimColors" type="list" default="0" label="'Unlimited Colors' Feature" description="Enable of not 'Unlimited Colors' feature on your website (NOTE! - If you use our Joomla Template, than dont enable it here, and use it in Joomla Template Manager. Also make sure if you have enabled 'Kunena Theme Color Override' There)">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="jf_ku_UC_MainActive" type="color" default="#448A94" label="Main Active Color" description="Choose Main Active Color (it contains all links, Menu Active Item color and so on...) | (Default is - '#448A94')"/>
+				<field name="jf_ku_UC_MainInactive" type="color" default="#DD0000" label="Main Inactive Color" description="Choose Main Inactive Color (it contains for example, 'cancel' button color ...) | (Default is - '#DD0000')" />
+				<field name="jf_ku_UC_Header" type="color" default="#448A94" label="Category Header Color" description="Choose Header Color (it contains Category headern color ...) | (Default is - '#448A94')" />
+				<field name="jf_ku_UC_MenuH" type="color" default="#448A94" label="Menu Item Hover Color" description="Choose Menu Item Hover Color (Default is - '#448A94')" />
+			
+			<field type="spacer" label="Custom CSS Styles" class="jf_sub_title" />
+				<field name="jf_ku_CustomCSS" type="textarea" class="jf_new_largest jf_new_h_50" default=".option-com-kunena #rt-main .rt-block{padding:0}" label="Custom CSS" description="Type your Custom CSS Styles" filter="raw" />
+		
+	</config>
+</kinstall>

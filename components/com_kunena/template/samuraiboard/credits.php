@@ -1,0 +1,1 @@
+<p style="text-align: center; font-size: 10px; font-weight: normal;"><em>Kunena Templates by <a href="http://templateblender.com/" title="templateBlender" target="_blank">templateBlender</a></em></p>

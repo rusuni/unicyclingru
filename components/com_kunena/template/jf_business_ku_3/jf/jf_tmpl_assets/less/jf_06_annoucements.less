@@ -1,0 +1,80 @@
+/**
+* @version		JF_KU_DTF_078
+* @author		JoomForest http://www.joomforest.com
+* @copyright	Copyright (C) 2011-2014 JoomForest.com
+* @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+*/
+
+@import "jf_00_mixins.less";
+@import "jf_00_variables.less";
+
+/* ===========_______________________________ START - ANNOUCEMENTS ________________________________________=========== */
+	div#kannouncement {
+		.kanndesc {
+			margin: 10px;
+			.anncreated {
+				text-decoration: underline;
+				margin: 0 0 5px 0;
+			}
+			.anndesc {
+				a {
+					float: right;
+					margin: 0 0 10px 0;
+				}
+			}
+		}
+	}
+	#kannouncement_body td {
+		border: 1px solid #DDD;
+		border-width: 0 1px 1px 0;
+		&.announcement-checkbox {
+			text-align: center;
+		}
+	}
+	.jf_ku_add_edit_announc_btn {
+		a {
+			font-size: 18px !important;
+			float: right;
+			background: #444 !important;
+			display: block;
+			padding: 0 8px;
+			line-height: 29px;
+			height: 29px;
+			.border-radius(2px);
+			&:hover {
+				text-decoration: none;
+				background: #222 !important;
+			}
+		}
+	}
+	/* start - EDIT ----------------------------------------------------------------- */
+		div.kblock.jf_ku_announc_edit {
+			.kactions {
+				background-color: #F6F6F6;
+				border-color: #DDD;
+				border-width: 0 1px 1px 1px;
+				text-align: right;
+				a {
+					color: #555 !important;
+				}
+			}
+			label {
+				font-family: arial,tahoma;
+			}
+			input.klarge,
+			textarea,
+			textarea.kmedium {
+				width: 97%;
+				margin: 10px 0;
+			}
+			input.klarge,
+			input[name="created"],
+			textarea {
+				.box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075));
+				border: 1px solid #DDD;
+				background: #F6F6F6;
+				padding: 6px;
+			}
+		}
+	/* end   - EDIT ----------------------------------------------------------------- */
+/* ===========_______________________________ END   - ANNOUCEMENTS ________________________________________=========== */

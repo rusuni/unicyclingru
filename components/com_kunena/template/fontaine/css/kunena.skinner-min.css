@@ -1,0 +1,42 @@
+@media (max-width:959px){#Kunena a.kicon-button.kbuttoncomm span{color:#404040 !important;}
+a.kicon-button,
+#Kunena a.kicon-button.kbuttoncomm{color:#404040 !important;padding:2px 4px !important;-webkit-box-shadow:none !important;-moz-box-shadow:none !important;box-shadow:none !important;border:0 none !important;background:none !important;}
+}
+@media (max-width:767px){#ktop, .kforum-pathway{display:none;}
+#Kunena, .kblock.kpathway{margin:0;}
+td.kcol-kcattopics,
+td.kcol-kcatreplies,
+td.kcol-kcatlastpost,
+td.kcol-ktopicreplies,
+td.kcol-ktopicicon,
+td.kcol-ktopicviews,
+td.kcol-ktopiclastpost,
+.kmsgdate,
+.kicon-button.kbuttononline-no,
+.kicon-button.kbuttononline-yes,
+.kicon-button.kbuttononline-yes > span,
+.kicon-button.kbuttononline-no > span,
+.kpost-userrank,
+.kpost-userposts,
+.kpost-usertyr,
+.kpost-karma,
+.kpost-smallicons{display:none !important;}
+#Kunena td.kprofile-left{min-width:0;background:none;border-right:0 none;}
+.fltlft input[type="submit"].kbutton{display:none !important}
+img.kavatar{width:48px;height:48px;}
+#Kunena div.ktitle-desc{display:none}
+#Kunena div.kwhoisonline td.kcol-first,
+#Kunena div.kgenstats td.kcol-first,
+#Kunena div.kfrontstats td.kcol-first{display:none}
+#Kunena div.kmsgbody div.kmsgtext{word-wrap:break-word !important;white-space:normal !important;}
+td.kmessage-left{word-wrap:break-word !important;}
+#Kunena div.kmsgbody div.kmsgtext{width:95%;}
+}
+@media (max-width:479px){#Kunena div.kmsgbody div.kmsgtext{width:95%;}
+#Kunena td.kbuttonbar-left,
+td.kcol-category-icon,
+.kmsg-id-left{display:none !important;}
+#Kunena tr.krow1 td,
+#Kunena tr.krow2 td,
+#Kunena td.kcol-mid{padding:15px 10px;}
+}

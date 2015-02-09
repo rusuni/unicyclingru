@@ -1,0 +1,180 @@
+<?xml version="1.1" encoding="utf-8"?>
+<!DOCTYPE kinstall>
+<kinstall type="kunena-template" version="2.0">
+	<name>Euro Gradients</name>
+	<creationDate>2013-12-25</creationDate>
+	<version>1.1.0</version>
+	<author>Kevin Mamaqi</author>
+	<authorEmail>kevinmamaqi@gmail.com</authorEmail>
+	<authorUrl>http://www.kevinmamaqi.com</authorUrl>
+	<copyright>Kevin Mamaqi</copyright>
+	<license>GNU/GPL</license>
+	<description>COM_KUNENA_TEMPLATE_DESCRIPTION</description>
+	<thumbnail>template_thumbnail.png</thumbnail>
+
+	<config>
+		<field type="spacer" label="COM_KUNENA_TEMPLATE_GENERAL_CONFIGURATIONS" description="COM_KUNENA_TEMPLATE_GENERAL_CONFIGURATIONS_DESC" />		
+				<field name="displayMenu" type="list" default="1" label="COM_KUNENA_TEMPLATE_DISPLAY_MENU" description="COM_KUNENA_TEMPLATE_DISPLAY_MENU_DESC">
+					<option value="0">COM_KUNENA_NO</option>
+					<option value="1">COM_KUNENA_YES</option>
+				</field>
+				<field name="avatarPosition" type="list" default="left" label="COM_KUNENA_TEMPLATE_PROFILE_POSITION" description="COM_KUNENA_TEMPLATE_PROFILEPOSITION_DESC">
+					<option value="left">COM_KUNENA_TEMPLATE_LEFT</option>
+					<option value="top">COM_KUNENA_TEMPLATE_TOP</option>
+					<option value="right">COM_KUNENA_TEMPLATE_RIGHT</option>
+					<option value="bottom">COM_KUNENA_TEMPLATE_BOTTOM</option>
+				</field>
+				<field name="buttonIconset" type="list" default="default" label="COM_KUNENA_TEMPLATE_BUTTON_SET" description="COM_KUNENA_TEMPLATE_BUTTON_SET_DESC">
+					<option value="default">COM_KUNENA_TEMPLATE_DEFAULT</option>
+					<option value="bluebird">COM_KUNENA_TEMPLATE_BUTTON_SET_BLUEBIRD</option>
+					<option value="graybird">COM_KUNENA_TEMPLATE_BUTTON_SET_GRAYBIRD</option>
+					<option value="blackbird">COM_KUNENA_TEMPLATE_BUTTON_SET_BLACKBIRD</option>
+					<option value="whitebird">COM_KUNENA_TEMPLATE_BUTTON_SET_WHITEBIRD</option>
+				</field>
+				<field name="profileIconset" type="list" default="default" label="COM_KUNENA_TEMPLATE_PROFILE_ICON_SET" description="COM_KUNENA_TEMPLATE_PROFILE_ICON_SET_DESC">
+					<option value="default">COM_KUNENA_TEMPLATE_DEFAULT</option>
+				</field>
+				<field name="editorIconset" type="list" default="default" label="COM_KUNENA_TEMPLATE_EDITOR_ICON_SET" description="COM_KUNENA_TEMPLATE_EDITOR_ICON_SET_DESC">
+					<option value="default">COM_KUNENA_TEMPLATE_DEFAULT</option>
+				</field>
+
+				<field name="enableSkinner" type="list" default="0" label="COM_KUNENA_TEMPLATE_SKINNER" description="COM_KUNENA_TEMPLATE_SKINNER_DESC">
+					<option value="0">COM_KUNENA_NO</option>
+					<option value="1">COM_KUNENA_YES</option>
+				</field>
+
+		<field type="spacer" label="COM_KUNENA_TEMPLATE_ANNOUNCEMENTS_STYLES" description="COM_KUNENA_TEMPLATE_ANNOUNCEMENTS_STYLES_DESC" />		
+
+				<!-- Color de la cabecera de los Anuncios -->
+				<field name="announcementHeadercolor" type="text" default="#FF8800" label="COM_KUNENA_TEMPLATE_ANNOUNCEMENT_HEADER_BACKGROUND" description="COM_KUNENA_TEMPLATE_HEADER_BACKGROUND_COLOR_DESC" />
+
+				<!-- Fondo de los Anuncios -->
+				<field name="announcementBoxbgcolor" type="text" default="#FFFF73" label="COM_KUNENA_TEMPLATE_ANNOUNCEMENT_BOX_BACKGROUND" description="COM_KUNENA_TEMPLATE_HEADER_BACKGROUND_COLOR_DESC" />
+
+		<field type="spacer" label="COM_KUNENA_TEMPLATE_FORUM_GENERAL_STYLES" description="COM_KUNENA_TEMPLATE_FORUM_GENERAL_STYLES_DESC" />
+
+				<!-- Imagen de fondo de la Cabecera de los Foros -->
+				<field name="forumHeaderImg" type="list" default="brown.png" label="COM_KUNENA_TEMPLATE_FORUM_HEADER_BACKGROUND_IMG" description="COM_KUNENA_TEMPLATE_FORUM_HEADER_BACKGROUND_IMG_DESC">
+					<option value="brown.png">COM_LUNENA_BROWN</option>
+					<option value="blue.png">COM_KUNENA_BLUE</option>
+					<option value="dark.png">COM_KUNENA_DARK</option>
+					<option value="green.png">COM_KUNENA_GREEN</option>
+					<option value="lila.png">COM_KUNENA_LILA</option>
+					<option value="orange.png">COM_KUNENA_ORANGE</option>
+					<option value="red.png">COM_KUNENA_RED</option>
+					<option value="yellow.png">COM_KUNENA_YELLOW</option>
+					<option value="personal.png">COM_KUNENA_PERSONAL</option>
+				</field>
+
+
+				<!-- Imagen de Fondo de la Cabecera de las estadísticas del Foro -->
+				<field name="frontstatsHeaderImg" type="list" default="brown.png" label="COM_KUNENA_TEMPLATE_FORUM_STATS_HEADER_BACKGROUND_IMG" description="COM_KUNENA_TEMPLATE_FORUM_STATS_HEADER_BACKGROUND_IMG_DESC">
+					<option value="brown.png">COM_LUNENA_BROWN</option>
+					<option value="blue.png">COM_KUNENA_BLUE</option>
+					<option value="dark.png">COM_KUNENA_DARK</option>
+					<option value="green.png">COM_KUNENA_GREEN</option>
+					<option value="lila.png">COM_KUNENA_LILA</option>
+					<option value="orange.png">COM_KUNENA_ORANGE</option>
+					<option value="red.png">COM_KUNENA_RED</option>
+					<option value="yellow.png">COM_KUNENA_YELLOW</option>
+					<option value="personal1.png">COM_KUNENA_PERSONAL1</option>
+					<option value="personal2.png">COM_KUNENA_PERSONAL2</option>
+					<option value="personal3.png">COM_KUNENA_PERSONAL3</option>
+				</field>
+
+				<!-- Imagen de Fondo de la quien esta online del Foro -->
+				<field name="whoisonlineHeaderImg" type="list" default="brown.png" label="COM_KUNENA_TEMPLATE_FORUM_ONLINE_HEADER_BACKGROUND_IMG" description="COM_KUNENA_TEMPLATE_FORUM_ONLINE_HEADER_BACKGROUND_IMG_DESC">
+					<option value="brown.png">COM_LUNENA_BROWN</option>
+					<option value="blue.png">COM_KUNENA_BLUE</option>
+					<option value="dark.png">COM_KUNENA_DARK</option>
+					<option value="green.png">COM_KUNENA_GREEN</option>
+					<option value="lila.png">COM_KUNENA_LILA</option>
+					<option value="orange.png">COM_KUNENA_ORANGE</option>
+					<option value="red.png">COM_KUNENA_RED</option>
+					<option value="yellow.png">COM_KUNENA_YELLOW</option>
+					<option value="personal.png">COM_KUNENA_PERSONAL</option>
+				</field>
+
+				<!-- Color de los enlaces del Foro -->
+				<field name="forumLinkcolor" type="text" default="#CC9933" label="COM_KUNENA_TEMPLATE_LINK_COLOR" description="COM_KUNENA_TEMPLATE_LINK_COLOR_DESC" />
+
+				<!-- Color de borde claro -->
+				<field name="borderLightColor" type="text" default="#CC9933" label="COM_KUNENA_TEMPLATE_BORDER_LIGHT_COLOR" description="COM_KUNENA_TEMPLATE_BORDER_LIGHT_COLOR_DESC" />
+
+				<!-- Color de borde oscuro -->
+				<field name="borderDarkColor" type="text" default="#996633" label="COM_KUNENA_TEMPLATE_BORDER_DARK_COLOR" description="COM_KUNENA_TEMPLATE_BORDER_DARK_COLOR_DESC" />
+
+				<!-- Fondo de la pestaña minimizar del foro -->
+				<field name="toggleButtoncolor" type="text" default="#996633" label="COM_KUNENA_TEMPLATE_TOGGLER_COLOR" description="COM_KUNENA_TEMPLATE_TOGGLER_COLOR_DESC" />
+
+		<field type="spacer" label="COM_KUNENA_TEMPLATE_MENU_STYLES" description="COM_KUNENA_TEMPLATE_MENU_STYLES_DESC" />
+
+				<!-- Color de pestaña de menú inactiva -->
+				<field name="inactiveTabcolor" type="text" default="#CC9933" label="COM_KUNENA_TEMPLATE_INACTIVE_TAB_COLOR" description="COM_KUNENA_TEMPLATE_INACTIVE_TAB_COLOR_DESC" />
+
+				<!-- Color de pestaña de menú activa -->
+				<field name="activeTabcolor" type="text" default="#996633" label="COM_KUNENA_TEMPLATE_ACTIVE_TAB_COLOR" description="COM_KUNENA_TEMPLATE_ACTIVE_TAB_COLOR_DESC" />
+
+				<!-- Color de pestaña de menú seleccionada -->
+				<field name="hoverTabcolor" type="text" default="#996633" label="COM_KUNENA_TEMPLATE_HOVER_TAB_COLOR" description="COM_KUNENA_TEMPLATE_HOVER_TAB_COLOR_DESC" />
+
+				<!-- Color del borde del Menú principal -->
+				<field name="topBordercolor" type="text" default="#996633" label="COM_KUNENA_TEMPLATE_TOP_BORDER_COLOR" description="COM_KUNENA_TEMPLATE_TOP_BORDER_COLOR_DESC" />
+
+				<!-- Color del texto de las pestañas inactivas -->
+				<field name="inactiveFontcolor" type="text" default="#FFFFFF" label="COM_KUNENA_TEMPLATE_INACTIVE_FONT_COLOR" description="COM_KUNENA_TEMPLATE_INACTIVE_FONT_COLOR_DESC" />
+
+				<!-- Color del texto de las pestañas activas -->
+				<field name="activeFontcolor" type="text" default="#FFFFFF" label="COM_KUNENA_TEMPLATE_ACTIVE_FONT_COLOR" description="COM_KUNENA_TEMPLATE_ACTIVE_FONT_COLOR_DESC" />
+
+	 <!--
+   <field name="allButtoncolor" type="text" default="" label="COM_KUNENA_TEMPLATE_BUTTON_COLOR" description="COM_KUNENA_TEMPLATE_BUTTON_COLOR_DESC" />
+		<field name="allButtonhovercolor" type="text" default="" label="COM_KUNENA_TEMPLATE_BUTTON_HOVER_COLOR" description="COM_KUNENA_TEMPLATE_BUTTON_HOVER_COLOR_DESC" />
+		<field name="allButtonbordercolor" type="text" default="" label="COM_KUNENA_TEMPLATE_BUTTON_BORDER_COLOR" description="COM_KUNENA_TEMPLATE_BUTTON_BORDER_COLOR_DESC" />
+		<field name="allButtonborderhovercolor" type="text" default="" label="COM_KUNENA_TEMPLATE_BUTTON_BORDER_HOVER_COLOR" description="COM_KUNENA_TEMPLATE_BUTTON_BORDER_HOVER_COLOR_DESC" />
+		<field name="allButtontextcolor" type="text" default="" label="COM_KUNENA_TEMPLATE_BUTTON_TEXT_COLOR" description="COM_KUNENA_TEMPLATE_BUTTON_TEXT_COLOR_DESC" />
+		<field name="allButtontexthovercolor" type="text" default="" label="COM_KUNENA_TEMPLATE_BUTTON_TEXT_HOVER_COLOR" description="COM_KUNENA_TEMPLATE_BUTTON_TEXT_HOVER_COLOR_DESC" />
+
+		<field name="paginationLinkcolor" type="text" default="" label="COM_KUNENA_TEMPLATE_PAGINATION_COLOR" description="COM_KUNENA_TEMPLATE_PAGINATION_COLOR_DESC" />
+		<field name="paginationLinkhovercolor" type="text" default="" label="COM_KUNENA_TEMPLATE_PAGINATION_HOVER_COLOR" description="COM_KUNENA_TEMPLATE_PAGINATION_HOVER_COLOR_DESC" />
+		<field name="paginationBordercolor" type="text" default="" label="COM_KUNENA_TEMPLATE_PAGINATION_BORDER_COLOR" description="COM_KUNENA_TEMPLATE_PAGINATION_BORDER_COLOR_DESC" />
+		<field name="paginationBorderhovercolor" type="text" default="" label="COM_KUNENA_TEMPLATE_PAGINATION_BORDER_HOVER_COLOR" description="COM_KUNENA_TEMPLATE_PAGINATION_BORDER_HOVER_COLOR_DESC" />
+		<field name="paginationTextcolor" type="text" default="" label="COM_KUNENA_TEMPLATE_PAGINATION_TEXT_COLOR" description="COM_KUNENA_TEMPLATE_PAGINATION_TEXT_COLOR_DESC" />
+		<field name="paginationTexthovercolor" type="text" default="" label="COM_KUNENA_TEMPLATE_PAGINATION_TEXT_HOVER_COLOR" description="COM_KUNENA_TEMPLATE_PAGINATION_TEXT_HOVER_COLOR_DESC" />-->
+
+
+
+		<field name="enableSkinner" type="list" default="0" 
+			label="COM_KUNENA_TEMPLATE_SKINNER" 
+			description="COM_KUNENA_TEMPLATE_SKINNER_DESC"
+		>
+			<option value="0">COM_KUNENA_NO</option>
+			<option value="1">COM_KUNENA_YES</option>
+		</field>
+		
+		<field name="loadResponsiveCSS" type="list" default="1" 
+			label="COM_KUNENA_TEMPLATE_LOAD_RESPONSIVE_CSS" 
+			description="COM_KUNENA_TEMPLATE_LOAD_RESPONSIVE_CSS_DESC"
+		>
+			<option value="0">COM_KUNENA_NO</option>
+			<option value="1">COM_KUNENA_YES</option>
+		</field>
+
+
+		<field name="templatebyText" type="hidden" default="Turismo en" />
+    	<field name="templatebyName" type="hidden" default=" Londres" />
+    	<field name="templatebyLink" type="hidden" default="http://www.euroviajar.com/destinos-turisticos-en-londres" />
+
+		<!-- Required avatar sizes -->
+		<field name="avatarSizeXThumb" type="hidden" default="36" />
+		<field name="avatarSizeYThumb" type="hidden" default="36" />
+		<field name="avatarSizeXWelcome" type="hidden" default="72" />
+		<field name="avatarSizeYWelcome" type="hidden" default="72" />
+		<field name="avatarSizeXList" type="hidden" default="36" />
+		<field name="avatarSizeYList" type="hidden" default="36" />
+		<field name="avatarSizeXPost" type="hidden" default="144" />
+		<field name="avatarSizeYPost" type="hidden" default="144" />
+		<field name="avatarSizeXProfile" type="hidden" default="200" />
+		<field name="avatarSizeYProfile" type="hidden" default="200" />
+	</config>
+</kinstall>

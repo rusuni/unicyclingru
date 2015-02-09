@@ -1,0 +1,290 @@
+/**
+* @version		JF_KU_DTF_078
+* @author		JoomForest http://www.joomforest.com
+* @copyright	Copyright (C) 2011-2014 JoomForest.com
+* @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+*/
+
+@import "jf_00_mixins.less";
+@import "jf_00_variables.less";
+
+/* ===========_______________________________ START - MAIN ________________________________________=========== */
+	/* start - LINKS ----------------------------------------------------------------- */
+		a:link, 
+		a:visited, 
+		a:active, 
+		a:focus {
+			color: @jf_ku_MainColor !important;
+		}
+		/* COLOR ADMINISTRATOR AND MODERATOR
+		----------------------------------------------------------------------------------------------- */
+		.kwho-admin,
+		a.kwho-admin {
+			color: #FF0000 !important;
+		}
+
+		.kwho-globalmoderator,
+		a.kwho-globalmoderator {
+			color: #800000 !important;
+		}
+
+		.kwho-moderator,
+		a.kwho-moderator {
+			color: #0000FF !important;
+		}
+
+		.kwho-user,
+		a.kwho-user {
+			color: #5388B4 !important;
+		}
+
+		.kwho-guest,
+		a.kwho-guest {
+			color: #666666 !important;
+		}
+
+		.kwho-banned ,
+		a.kwho-banned {
+			color: #A39D49 !important;
+		}
+
+		.kwho-blocked,
+		a.kwho-blocked {
+			color: #ff0000 !important;
+		}
+	/* end   - LINKS ----------------------------------------------------------------- */
+	a.open,
+	a.close {
+		background-color: rgba(0, 0, 0, 0.5) !important;
+		margin: 5px 6px;
+		cursor: pointer;
+	}
+	select, 
+	select:focus, 
+	select:hover {
+		border-color: #D9D9D9;
+		padding: 2px 0;
+		color: #555;
+	}
+/* ===========_______________________________ END   - MAIN ________________________________________=========== */
+
+/* ===========_______________________________ START - "i" tags ________________________________________=========== */
+	.jf_ku_i_dot {
+		background: #777;
+		display: inline-block;
+		width: 4px;
+		height: 4px;
+		margin: 2px 3px;
+	}
+/* ===========_______________________________ END   - "i" tags ________________________________________=========== */
+
+/* ===========_______________________________ START - MARK ALL ________________________________________=========== */
+	.klist-markallcatsread {
+		border-color: #DDD;
+	}
+/* ===========_______________________________ END   - MARK ALL ________________________________________=========== */
+
+/* ===========_______________________________ START - KBUTTON ________________________________________=========== */
+	input.kbutton,
+	button.kbutton {
+		border: 0;
+		background: @jf_ku_MainColor;
+		color: #FFF;
+		display: inline-block;
+		line-height: 26px;
+		height: 26px;
+		padding: 0 10px;
+		.border-radius(2px);
+		outline: 0;
+		&:hover,
+		&:focus {
+			border: 0;
+			background: @jf_ku_MainColor;
+			font-size: 11px;
+			padding: 0 10px;
+		}
+		&:active {
+			.box-shadow(~"inset 0 1px 7px rgba(0, 0, 0, 0.3),0 1px 0 #FFF");
+		}
+		&[name="cancel"] {
+			background-color: #D00;
+		}
+	}
+	.kbutton-container .kbutton {
+		font-size: 11px;
+		font-weight: 100;
+		padding: 0 10px;
+		font-family: arial, tahoma, verdana;
+		&:hover,
+		&:focus {
+			font-size: 11px;
+			font-weight: 100;
+			padding: 0 10px;
+		}
+	}
+/* ===========_______________________________ END   - KBUTTON ________________________________________=========== */
+
+/* ===========_______________________________ START - JUMP TO ________________________________________=========== */
+	#jumpto {
+		margin: 8px;
+		.inputbox {
+			display: inline-table;
+			vertical-align: top;
+			border-color: #DDD;
+			outline: 0;
+			line-height: 26px;
+			height: 26px;
+		}
+		input.kbutton {
+			text-transform: uppercase;
+		}
+	}
+/* ===========_______________________________ END   - JUMP TO ________________________________________=========== */
+
+/* ===========_______________________________ START - HEADER ________________________________________=========== */
+	.kblock div.kheader {
+		background: @jf_ku_MainColor !important;
+		border: 1px solid #DDD;
+		color: #fff !important;
+		h2 {
+			padding: 7px 0;
+			a {
+				color: #fff !important;
+				font-weight: 100;
+				font-size: 22px;
+			}
+		}
+	}
+	.kheader h2, 
+	.kheader h2 a {
+		font-weight: 100;
+		font-size: 18px;
+	}
+/* ===========_______________________________ END   - HEADER ________________________________________=========== */
+
+/* ===========_______________________________ START - TABLES ________________________________________=========== */
+	div.kblock div.kbody,
+	table.kblocktable,
+	td.kcol-mid,
+	td.kcol-first,
+	.klist-jump-all,
+	.klist-times-all {
+		border-color: #ddd;
+	}
+	div.kblock {
+		border-color: #ddd;
+	}
+	tr.krow1 td {
+		background-color: #F9F9F9;
+	}
+/* ===========_______________________________ END   - TABLES ________________________________________=========== */
+
+/* ===========_______________________________ START - MODERATION ________________________________________=========== */
+	 td.krowmoderation {
+	 	select {
+	 		display: inline-table;
+			vertical-align: top;
+			border-color: #d5d5d5;
+			outline: 0;
+			line-height: 26px;
+			height: 26px;
+	 	}
+	 	input.kbutton {
+		 	border: 0;
+			background: @jf_ku_MainColor;
+			color: #FFF;
+			display: inline-block;
+			line-height: 26px;
+			height: 26px;
+			padding: 0 10px;
+			.border-radius(2px);
+			outline: 0;
+			&:active {
+				.box-shadow(~"inset 0 1px 7px rgba(0, 0, 0, 0.3),0 1px 0 #FFF");
+			}
+		}
+	 }
+/* ===========_______________________________ END   - MODERATION ________________________________________=========== */
+
+/* ===========_______________________________ START - OLD FONTAWESOME ________________________________________=========== */
+	.icon-calendar {
+		font-family: FontAwesome;
+		font-weight: normal;
+		font-style: normal;
+		text-decoration: inherit;
+		-webkit-font-smoothing: antialiased;
+		&:before {
+			text-decoration: inherit;
+			display: inline-block;
+			speak: none;
+			content: "\f073";
+		}
+	}
+/* ===========_______________________________ END   - OLD FONTAWESOME ________________________________________=========== */
+
+/* ===========_______________________________ START - WHOS ONLINE ________________________________________=========== */
+	.kwhoonline {
+		border-bottom: 1px solid #EEE;
+		margin-bottom: 5px;
+	}
+	.kwholegend {
+		border-top: 1px solid #EEE;
+	}
+	.kwhoicon {
+		background-image: url(../images/icons/icon_whoisonline.png);
+	}
+	.kwhoisonline .ktitle {
+		font-weight: 100;
+	}
+/* ===========_______________________________ END   - WHOS ONLINE ________________________________________=========== */
+
+/* ===========_______________________________ START - STATISTICS ________________________________________=========== */
+	.kstatsicon {
+		background-image: url(../images/icons/icon_statistics.png);
+		.opacity(70);
+	}
+	#kusersearch {
+		padding: 4px 8px;
+	}
+/* ===========_______________________________ END   - STATISTICS ________________________________________=========== */
+
+/* ===========_______________________________ START - POWERED BY ________________________________________=========== */
+	.kfooter {
+		min-height: 18px;
+		margin-top: -8px;
+	}
+	.jf_ku_poweredby {
+		padding: 0 0 10px 0;
+		font-size: .833em;
+	}
+/* ===========_______________________________ END   - POWERED BY ________________________________________=========== */
+
+/* ===========_______________________________ START - JF LOGO ________________________________________=========== */
+	.jf_ku_jflogo a {
+		display: block;
+		height: 34px;
+		width: 36px;
+		margin: 0 auto;
+		background: url(../images/jf_logo.png) no-repeat top left;
+		.opacity(40);
+		&:hover {
+			.opacity(100);
+		}
+	}
+/* ===========_______________________________ END   - JF LOGO ________________________________________=========== */
+
+/* ===========_______________________________ START - RSS ________________________________________=========== */
+	div.krss-block {
+		float: none;
+		position: relative;
+		display: block;
+		height: 24px;
+	}
+	span.krss {
+		background-image: url(../images/icons/icon_rss.png);
+		position: absolute;
+		right: 0;
+		margin: 7px 0 0 0;
+		width: 20px;
+	}
+/* ===========_______________________________ END   - RSS ________________________________________=========== */

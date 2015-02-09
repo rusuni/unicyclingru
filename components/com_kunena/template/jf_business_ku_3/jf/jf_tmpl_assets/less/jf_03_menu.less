@@ -1,0 +1,47 @@
+/**
+* @version		JF_KU_DTF_078
+* @author		JoomForest http://www.joomforest.com
+* @copyright	Copyright (C) 2011-2014 JoomForest.com
+* @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+*/
+
+@import "jf_00_mixins.less";
+@import "jf_00_variables.less";
+
+#ktab {
+	margin: 0;
+}
+#ktop {
+	border: 1px solid #DDD;
+	border-width: 0 0 1px 1px;
+	ul.menu {
+		border: 1px solid #DDD;
+		background: #EEE;
+		border-width: 1px 0 0 0;
+		li {
+			margin: 0 !important;
+			border: 1px solid #DFDFDF;
+			border-width: 0 1px 0 0;
+			a {
+				span {
+					color: @jf_ku_MainColor;
+					line-height: 38px;
+					font-size: 17px
+				}
+			}
+			&:hover,
+			&.active {
+				background-color: @jf_ku_MainColor;
+				a {
+					span {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+	a.open,
+	a.close {
+		margin: -10px 5px 0 0;
+	}
+}

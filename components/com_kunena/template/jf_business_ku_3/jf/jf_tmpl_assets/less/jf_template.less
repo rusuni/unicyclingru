@@ -1,0 +1,30 @@
+/**
+* @version		JF_KU_DTF_078
+* @author		JoomForest http://www.joomforest.com
+* @copyright	Copyright (C) 2011-2014 JoomForest.com
+* @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+*/
+
+body {
+	@import "jf_01_global.less";
+
+	#Kunena {
+		@import "jf_02_main.less";
+		@import "jf_03_menu.less";
+		@import "jf_04_loginbox.less";
+		@import "jf_05_breadcrumb.less";
+		@import "jf_06_annoucements.less";
+		@import "jf_07_categories.less";
+		@import "jf_08_topics.less";
+		@import "jf_09_topic.less";
+		@import "jf_10_search.less";
+		@import "jf_11_profile.less";
+		/* RESPONSIVE ------------------------------------------------ */
+		@import "jf_theme_resp.less";
+		/* RTL ------------------------------------------------ */
+		&.jf_ku_rtl {
+			@import "jf_theme_rtl.less";
+		}
+	}
+}
+/* @import "jf_zz_colors.less"; */

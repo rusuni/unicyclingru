@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install>
+<kinstall type="kunena-template" version="1.6">
+	<name>SamuraiBoard</name>
+	<version>1.0.0</version>
+	<creationDate>2010-21-10</creationDate>
+	<author>Kunena Team</author>
+	<authorEmail>team@kunena.com</authorEmail>
+	<authorUrl>http://www.kunena.com</authorUrl>
+	<copyright>Kunena Team</copyright>
+	<license>GNU/GPL</license>
+	<description></description>
+	<thumbnail>template_thumbnail.png</thumbnail>
+	<params>
+
+		<param name="templatebyText" type="hidden" default="Kunena Templates by" />
+		<param name="templatebyName" type="hidden" default="templateBlender" />
+		<param name="templatebyLink" type="hidden" default="http://templateblender.com/" />
+		
+		<!-- Required avatar sizes -->
+		<param name="avatarSizeXThumb" type="hidden" default="36" />
+		<param name="avatarSizeYThumb" type="hidden" default="36" />
+		<param name="avatarSizeXWelcome" type="hidden" default="72" />
+		<param name="avatarSizeYWelcome" type="hidden" default="72" />
+		<param name="avatarSizeXList" type="hidden" default="36" />
+		<param name="avatarSizeYList" type="hidden" default="36" />
+		<param name="avatarSizeXPost" type="hidden" default="144" />
+		<param name="avatarSizeYPost" type="hidden" default="144" />
+		<param name="avatarSizeXProfile" type="hidden" default="200" />
+		<param name="avatarSizeYProfile" type="hidden" default="200" />
+	</params>
+</kinstall>

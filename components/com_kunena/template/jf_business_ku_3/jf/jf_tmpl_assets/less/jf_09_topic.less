@@ -1,0 +1,72 @@
+/**
+* @version		JF_KU_DTF_078
+* @author		JoomForest http://www.joomforest.com
+* @copyright	Copyright (C) 2011-2014 JoomForest.com
+* @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+*/
+
+@import "jf_00_mixins.less";
+@import "jf_00_variables.less";
+
+/* ===========_______________________________ START - TOPIC ________________________________________=========== */
+	div.kmsgtext-article, 
+	div.kmsgtext-quote, 
+	div.kmsgtext-hide, 
+	div.kmsgtext-confidential {
+		margin: 10px 0;
+	}
+	div.kmsgtext pre, 
+	div.kmsgtext code {
+		margin: 10px 0;
+	}
+	div.kmsgtext pre, 
+	div.kmsgtext code {
+		background: #FFFCD7;
+		border-color: #D5D5D5;
+		border-left-color: #DA8C60;
+	}
+	.kspoiler-expand, 
+	.kspoiler-hide {
+		background: #888;
+		color: #FFF;
+		padding: 1px 5px;
+		.border-radius(2px);
+	}
+	.kspoiler-wrapper {
+		border-bottom: 1px solid #888;
+		border-top: 1px solid #888;
+	}
+	.kmsgimage img {
+		border: 1px solid #DDD;
+	}
+	div.kmsgattach {
+		background-color: #F0F0F0;
+		.box-shadow(inset 0 0 15px rgba(0, 0, 0, 0.1));
+		border: 1px solid #D5D5D5;
+		padding: 10px;
+		&:hover {
+			background-color: #f7f7f7;
+		}
+	}
+	ul.kfile-attach li {
+		background-image: url(../images/icons/icon_paperclip.png);
+	}
+/* ===========_______________________________ END   - TOPIC ________________________________________=========== */
+
+/* ===========_______________________________ START - EDIT ________________________________________=========== */
+	.kfile-hide input {
+		color: #FFF !important;
+	}
+	#kpost-subscribe {
+		i {
+			font-family: arial, tahoma, verdana;
+		}
+	}
+	#kpost-buttons .kbutton {
+		padding: 0 10px;
+		font-size: 11px;
+	}
+	td.kprofile-left {
+		border-bottom: 0;
+	}
+/* ===========_______________________________ END   - EDIT ________________________________________=========== */

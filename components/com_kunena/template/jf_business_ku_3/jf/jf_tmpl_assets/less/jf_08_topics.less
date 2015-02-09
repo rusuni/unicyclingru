@@ -1,0 +1,75 @@
+/**
+* @version		JF_KU_DTF_078
+* @author		JoomForest http://www.joomforest.com
+* @copyright	Copyright (C) 2011-2014 JoomForest.com
+* @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+*/
+
+@import "jf_00_mixins.less";
+@import "jf_00_variables.less";
+
+.kheader h3 {
+	margin: 10px 0;
+}
+.kcontenttablespacer {
+	display: none;
+}
+.krow2-stickymsg {
+	background-color: #FFFFDA;
+}
+td.kcol-ktopicreplies {
+	font-size: 11px;
+	strong {
+		font-size: 19px;
+	}
+}
+div.ktopic-title-cover {
+	padding-top: 5px;
+}
+span.ktopic-by {
+	float: none;
+	display: inherit;
+}
+.ktopic-details-kcategory {
+	margin: 5px 0 3px 0;
+}
+.ktopic-details-kcategory {
+	margin: 0 0 5px 0;
+}
+#kflattable ul.kpagination {
+	li a {
+		background: @jf_ku_MainColor !important;
+		border: 0;
+		color: #FFF !important;
+		padding: 2px 4px;
+		.border-radius(2px);
+	}
+}
+span.ktopicattach {
+	background-image: url(../images/icons/icon_paperclip.png);
+	background-position: center;
+	width: 22px;
+	.opacity(40);
+}
+span.ktopicpoll {
+	background-image: url(../images/icons/icon_poll.png);
+	background-position: center;
+	width: 22px;
+	height: 34px;
+	.opacity(30);
+}
+.klist-pages-all,
+.klist-actions,
+.klist-bottom,
+.klist-actions-bottom,
+div#kforum-head,
+.klist-actions-forum {
+	border-color: #DDD;
+}
+.kpagination span {
+	border-color: @jf_ku_MainColor;
+	background-color: @jf_ku_MainColor;
+}
+span.ktopicmy {
+	background-image: url(../images/icons/icon_myflag.png);
+}

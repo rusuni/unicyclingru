@@ -1,0 +1,124 @@
+/**
+* @version		JF_KU_DTF_078
+* @author		JoomForest http://www.joomforest.com
+* @copyright	Copyright (C) 2011-2014 JoomForest.com
+* @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+*/
+
+@import "jf_00_mixins.less";
+@import "jf_00_variables.less";
+
+/* ===========_______________________________ START - LESS ________________________________________=========== */
+	a:link, 
+	a:visited, 
+	a:active, 
+	a:focus {
+		color: @jf_ku_MainColor !important;
+	}
+	input.kbutton,
+	button.kbutton {
+		background-color: @jf_ku_MainColor;
+		&:hover,
+		&:focus {
+			background-color: @jf_ku_MainColor;
+		}
+	}
+	.kblock div.kheader {
+		background-color: @jf_ku_MainColor !important;
+	}
+	td.krowmoderation input.kbutton {
+		background-color: @jf_ku_MainColor;
+	}
+	#ktop {
+		ul.menu {
+			li {
+				a {
+					span {
+						color: @jf_ku_MainColor;
+					}
+				}
+				&:hover,
+				&.active {
+					background-color: @jf_ku_MainColor;
+				}
+			}
+		}
+	}
+	#kprofilebox .kbody .kprofileboxcnt .input .kbutton {
+		background-color: @jf_ku_MainColor;
+	}
+	#kprofilebox .kbody .kprofileboxcnt .klink-block a {
+		&:hover {
+			color: @jf_ku_MainColor !important;
+		}
+	}
+	#kprofilebox .kbody ul.kprofilebox-welcome li input.kbutton {
+		background-color: @jf_ku_MainColor;
+	}
+	#kprofilebox .kbody .kprofilebox-link li a {
+		background-color: @jf_ku_MainColor !important;
+	}
+	#kflattable ul.kpagination {
+		li a {
+			background: @jf_ku_MainColor !important;
+		}
+	}
+	.kpagination span {
+		border-color: @jf_ku_MainColor;
+		background-color: @jf_ku_MainColor;
+	}
+	dl.tabs {
+		dt {
+			&:hover {
+				border-color: @jf_ku_MainColor;
+			}
+			&.open {
+				background-color: @jf_ku_MainColor;
+				border-color: @jf_ku_MainColor;
+			}
+		}
+	}
+	@media (max-width:579px) {
+		#ktab ul.menu li a:hover, 
+		#ktab ul.menu li a:hover span {
+			background-color: @jf_ku_MainColor !important;
+		}
+	}
+/* ===========_______________________________ END   - LESS ________________________________________=========== */
+
+/* ===========_______________________________ START - CSS ________________________________________=========== */
+	a:link,
+	a:visited,
+	a:active,
+	a:focus,
+	#kprofilebox .kbody .kprofileboxcnt .klink-block a:hover
+	{color:'.$jf_ku_UC_MainActive.' !important}
+	#ktop ul.menu li a span
+	{color:'.$jf_ku_UC_MainActive.'}
+
+	input.kbutton,
+	button.kbutton,
+	input.kbutton:hover,
+	button.kbutton:hover,
+	input.kbutton:focus,
+	button.kbutton:focus,
+	td.krowmoderation input.kbutton,
+	#ktop ul.menu li:hover,
+	#ktop ul.menu li.active,
+	#kprofilebox .kbody .kprofileboxcnt .input .kbutton,
+	#kprofilebox .kbody ul.kprofilebox-welcome li input.kbutton
+	{background-color:'.$jf_ku_UC_MainActive.'}
+	.kblock div.kheader,
+	#kprofilebox .kbody .kprofilebox-link li a,
+	#kflattable ul.kpagination li a
+	{background-color:'.$jf_ku_UC_MainActive.' !important}
+	@media(max-width:579px){
+	#ktab ul.menu li a:hover,
+	#ktab ul.menu li a:hover span
+	{background-color:'.$jf_ku_UC_MainActive.' !important}
+	}
+	.kpagination span,
+	dl.tabs dt.open
+	{border-color:'.$jf_ku_UC_MainActive.';background-color:'.$jf_ku_UC_MainActive.'}
+	dl.tabs dt:hover{border-color:'.$jf_ku_UC_MainActive.'}
+/* ===========_______________________________ END   - CSS ________________________________________=========== */

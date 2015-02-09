@@ -1,0 +1,109 @@
+/**
+* @version		JF_KU_DTF_078
+* @author		JoomForest http://www.joomforest.com
+* @copyright	Copyright (C) 2011-2014 JoomForest.com
+* @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+*/
+
+@import "jf_00_mixins.less";
+@import "jf_00_variables.less";
+
+/* ===========_______________________________ START - PROFILE: MAIN ________________________________________=========== */
+	span.ktopiclocked, 
+	span.kforumlocked {
+		background-image: url(../images/icons/icon_lock.png);
+		background-position: center;
+	}
+	span.kfavoritestar {
+		background-image: url(../images/icons/icon_star.png);
+		background-position: center;
+	}
+	span.kheadbtn {
+		a {
+			padding: 2px 8px;
+			display: block;
+			font-size: 18px !important;
+			background: #444 !important;
+			&:hover {
+				background: #222 !important;
+			}
+		}
+	}
+	div.kavatar-lg {
+		display: block;
+		margin: 0 auto;
+		padding: 0;
+		border: 0;
+		background: 0;
+		height: auto;
+		width: auto;
+		img {
+			display: block;
+			margin: 0 auto;
+			border: 1px solid #DDD;
+		}
+	}
+	table#kprofile td.kcol-left,
+	table#kprofile td.kcol-right {
+		padding: 15px 10px 30px;
+	}
+	div.clrline {
+		border-top-color: #DDD;
+	}
+	div.kprofile-rightcol1 h4 {
+		font-weight: 100;
+		font-size: 22px;
+	}
+	div#kprofile-stats {
+		text-align: center;
+	}
+/* ===========_______________________________ END   - PROFILE: MAIN ________________________________________=========== */
+
+/* ===========_______________________________ START - PROFILE: TABS ________________________________________=========== */
+	div.current {
+		border: 0;
+		padding: 10px 0 0 0;
+	}
+	dl.tabs {
+		border: 1px solid #DDD;
+		dt {
+			border: 0;
+			background-color: #F9F9F9;
+			border-bottom-color: #F9F9F9;
+			color: #000;
+			padding: 5px 10px;
+			&:hover {
+				border-top: 2px solid @jf_ku_MainColor;
+				margin-top: -2px;
+				border-bottom: 2px solid @jf_ku_MainColor;
+				margin-bottom: -2px;
+			}
+			&.open {
+				background: @jf_ku_MainColor;
+				border: 0;
+				color: #FFF;
+				border-top: 3px solid @jf_ku_MainColor;
+				margin-top: -3px;
+				border-bottom: 3px solid @jf_ku_MainColor;
+				margin-bottom: -3px;
+			}
+		}
+	}
+	#kprofile-tabs div.kblock span.select-toggle {
+		top: 15px;
+		right: 5px;
+	}
+/* ===========_______________________________ END   - PROFILE: TABS ________________________________________=========== */
+
+/* ===========_______________________________ START - PROFILE: EDIT ________________________________________=========== */
+	#kprofile-edit {
+		label {
+			font-family: arial, tahoma, verdana
+		}
+		input[type="text"],
+		input[type="password"],
+		textarea {
+			padding: 4px 6px;
+		}
+	}
+/* ===========_______________________________ END   - PROFILE: EDIT ________________________________________=========== */
