@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jdiction>
+  <component>com_categories</component>
+  <sections>
+    <section>
+      <tables>
+        <table>
+          <name>#__categories</name>
+          <key>id</key>
+          <class>CategoriesTableCategory</class>
+          <file>category.php</file>
+          <exportfilter>title != "ROOT"</exportfilter>
+          <cache fullfetch="1" />
+        </table>
+      </tables>
+      <views>
+        <view name="category" list="categories" layout="edit" default="true">
+          <form import="category.xml">
+          <fieldset name="main" label="COM_JDICTION_TRANSLATION_FIELDSET_MAIN">
+              <field name="title" />
+              <field name="alias" type="jdalias" field="title" export="false" />
+              <field name="metakey" />
+              <field name="metadesc" />
+              <field name="description" />
+            </fieldset>
+          </form>
+        </view>
+      </views>
+    </section>
+  </sections>
+</jdiction>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jdiction>
+<component>com_modules</component>
+<sections>
+  <section>
+    <tables>
+      <table>
+        <name>#__modules</name>
+        <key>id</key>
+        <class>JTableModule</class>
+        <file>module.php</file>
+        <cache fullfetch="1" />
+      </table>
+    </tables>
+    <views>
+      <view name="module" list="modules" layout="edit" default="true">
+        <form import="module.xml">
+          <fieldset name="main" label="COM_JDICTION_TRANSLATION_FIELDSET_MAIN">
+            <field name="title" />
+            <field name="content" />
+          </fieldset>
+        </form>
+      </view>
+    </views>
+  </section>
+</sections>
+</jdiction>

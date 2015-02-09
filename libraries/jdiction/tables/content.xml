@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jdiction>
+  <component>com_content</component>
+  <sections>
+    <section>
+      <tables>
+        <table>
+          <name>#__content</name>
+          <key>id</key>
+          <class>JTableContent</class>
+          <file>content.php</file>
+          <cache fullfetch="0" />
+        </table>
+      </tables>
+      <views>
+        <view name="article" list="articles" layout="edit" default="true">
+          <form import="article.xml">
+            <fieldset name="main" label="COM_JDICTION_TRANSLATION_FIELDSET_MAIN">
+              <field name="title" />
+              <field name="alias" type="jdalias" field="title" export="false" />
+              <field name="metakey" />
+              <field name="metadesc" />
+              <field name="articletext" multifield="introtext,fulltext" seperator="&lt;hr id=&quot;system-readmore&quot; /&gt;" />
+            </fieldset>
+            <fields name="attribs">
+              <fieldset name="basic">
+                <field name="alternative_readmore" />
+              </fieldset>
+            </fields>
+          </form>
+        </view>
+      </views>
+    </section>
+  </sections>
+</jdiction>

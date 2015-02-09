@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jdiction>
+  <component>com_tags</component>
+  <sections>
+    <section>
+      <tables>
+        <table>
+          <name>#__tags</name>
+          <key>id</key>
+          <class>JTableTag</class>
+          <file>tag.php</file>
+          <cache fullfetch="0" />
+        </table>
+      </tables>
+      <views>
+        <view name="tag" list="tags" layout="edit" default="true">
+          <form import="tag.xml">
+            <fieldset name="main" label="COM_JDICTION_TRANSLATION_FIELDSET_MAIN">
+              <field name="title" />
+              <field name="alias" type="jdalias" field="title" export="false" />
+              <field name="metakey" />
+              <field name="metadesc" />
+              <field name="description" />
+            </fieldset>
+          </form>
+        </view>
+      </views>
+    </section>
+  </sections>
+</jdiction>

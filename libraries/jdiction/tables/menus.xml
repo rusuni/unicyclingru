@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jdiction>
+<component>com_menus</component>
+<sections>
+  <section>
+    <tables>
+      <table>
+        <name>#__menu</name>
+        <key>id</key>
+        <class>MenusTableMenu</class>
+        <file>menu.php</file>
+        <exportfilter>((menutype != 'main') and (alias != 'root') and (menutype != 'menu'))</exportfilter>
+        <cache fullfetch="1" />
+      </table>
+    </tables>
+    <views>
+      <view name="item" list="items" layout="edit">
+        <form import="item.xml,item_component.xml">
+          <fieldset name="main" label="COM_JDICTION_TRANSLATION_FIELDSET_MAIN">
+            <field name="title" />
+            <field name="alias" type="jdalias" field="title" export="false" />
+          </fieldset>
+          <fields name="params">
+            <fieldset name="page-options">
+                <field name="page_heading" />
+                <field name="page_title" />
+            </fieldset>
+            <fieldset name="metadata">
+              <field name="menu-meta_description" />
+              <field name="menu-meta_keywords" />
+            </fieldset>
+          </fields>
+        </form>
+      </view>
+    </views>
+  </section>
+  <section>
+    <tables>
+      <table>
+        <name>#__menu_types</name>
+        <key>id</key>
+        <class>JTableMenuType</class>
+        <file>menutype.php</file>
+        <cache fullfetch="1" />
+      </table>
+    </tables>
+    <views>
+      <view name="menu" list="menus" layout="edit">
+        <form import="menu.xml">
+          <fieldset name="main">
+            <field name="title" />
+            <field name="description" />
+          </fieldset>
+        </form>
+      </view>
+    </views>
+  </section>
+</sections>
+</jdiction>
