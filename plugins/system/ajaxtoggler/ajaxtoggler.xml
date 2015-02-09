@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.2" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_AJAX_TOGGLER</name>
+	<description>PLG_SYSTEM_AJAX_TOGGLER_XML_DESCRIPTION</description>
+
+	<author>AlterBrains</author>
+	<copyright>Copyright (C) 2009 - 2014 AlterBrains.com</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>alterbrains@gmail.com</authorEmail>
+	<authorUrl>www.alterbrains.com</authorUrl>
+	<client>0</client>
+
+	<creationDate>02/05/2014</creationDate>
+	<version>3.2.1</version>
+	
+	<files>
+		<filename plugin="ajaxtoggler">ajaxtoggler.php</filename>
+		<filename>index.html</filename>
+		<filename>ajaxtoggler.js</filename>
+	</files>
+	
+	<scriptfile>ajaxtoggler.script.php</scriptfile>
+	
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_ajaxtoggler.ini</language>
+		<language tag="en-GB">en-GB.plg_system_ajaxtoggler.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="exclude" default="" type="sql" key_field="value" value_field="name" query="SELECT name, element AS value FROM #__extensions WHERE type='component' ORDER BY name" label="PLG_SYSTEM_AJAX_TOGGLER_EXCLUDE" description="PLG_SYSTEM_AJAX_TOGGLER_EXCLUDE_DESC" size="7" multiple="true"></field>
+				<field name="toolbar" default="" type="sql" key_field="value" value_field="name" query="SELECT name, element AS value FROM #__extensions WHERE type='component' ORDER BY name" label="PLG_SYSTEM_AJAX_TOGGLER_TOOLBAR" description="PLG_SYSTEM_AJAX_TOGGLER_TOOLBAR_DESC" size="7" multiple="true"></field>
+			</fieldset>
+		</fields>
+	</config>
+	
+	<updateservers>
+		<server type="collection" priority="1" name="AlterBrains Updates">http://www.alterbrains.com/update.xml</server>
+	</updateservers>
+	
+</extension>

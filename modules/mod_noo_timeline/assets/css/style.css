@@ -1,0 +1,219 @@
+/**
+ * @version		$Id$
+ * @author		NooTheme
+ * @package		Joomla.Site
+ * @subpackage	mod_noo_timeline
+ * @copyright	Copyright (C) 2013 NooTheme. All rights reserved.
+ * @license		License GNU General Public License version 2 or later; see LICENSE.txt, see LICENSE.php
+*/
+
+@charset "UTF-8";
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+.clearfix:after {
+    clear: both;
+}
+
+.noo-tl {
+}
+.noo-tl-wrap {
+    position: relative;
+    background: url("../images/line.png") repeat-y scroll center center transparent;
+}
+.noo-tl-line {
+    background: url("../images/line.png") repeat-y scroll 0 0 transparent;
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width:3px;
+}
+.noo-tl-item {
+    margin-bottom: 20px;
+    position: relative;
+    width: 50%;
+}
+.noo-tl-item.right{
+	float: right;
+}
+.noo-tl-item.left {
+	float: left;
+}
+.noo-tl-control{
+	background: url("../images/plus.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 23px;
+    position: absolute;
+    top: 20px;
+    width: 23px;
+    cursor: pointer;
+}
+.noo-tl-item.right .noo-tl-control{
+	left: -12px;
+}
+.noo-tl-item.left .noo-tl-control{
+	right: -12px;
+}
+.noo-tl-item.selected .noo-tl-control{
+	background: url("../images/minus.png") no-repeat scroll 0 0 transparent;
+}
+
+.noo-tl-item .noo-tl-time {
+    color: #797979;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    min-height: 23px;
+    min-width: 230px;
+    cursor: pointer;	
+}
+.noo-tl-item.right .noo-tl-time {
+    margin: 0 30px 0 0;
+    right: 100%;
+    text-align: right;
+}
+.noo-tl-item.left .noo-tl-time {
+    left: 100%;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.noo-tl-info {
+    background: none repeat scroll 0 0 #5C5C5C;
+    border-radius: 8px 8px 8px 8px;
+    padding: 25px 40px;
+    position: relative;
+}
+.noo-tl-item.left .noo-tl-info{
+	margin-right: 30px;
+}
+.noo-tl-item.right .noo-tl-info{
+	margin-left: 30px;
+}
+
+.noo-tl-info .arrow,
+.noo-tl-info .arrow:after {
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.noo-tl-info .arrow:after {
+  content: "";
+  z-index: -1;
+}
+
+.noo-tl-item.right .arrow {
+  top: 30px;
+  left: -10px;
+  margin-top: -10px;
+  border-width: 10px 10px 10px 0;
+  border-right-color: #5C5C5C;
+}
+.noo-tl-item.right .arrow:after {
+  border-width: 11px 11px 11px 0;
+  border-right-color: rgba(0, 0, 0, 0.25);
+  bottom: -11px;
+  left: -1px;
+}
+
+.noo-tl-item.left .arrow {
+  top:30px;
+  right: -10px;
+  margin-top: -10px;
+  border-width: 10px 0 10px 10px;
+  border-left-color: #5C5C5C;
+}
+.noo-tl-item.left .arrow:after {
+  border-width: 11px 0 11px 11px;
+  border-left-color: rgba(0, 0, 0, 0.25);
+  bottom: -11px;
+  right: -1px;
+}
+
+.noo-tl-item h2 a {
+    margin: 0;
+    color: #bfbfbf;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    
+}
+.noo-tl-item h2 a:hover{
+	text-decoration: none;
+	color: #EDEAEA;
+}
+.noo-tl-item .noo-tl-desc {
+   display:none;
+   overflow: hidden;
+   color:#9b9b9b;
+}
+.noo-tl-item.selected .noo-tl-desc{
+	
+}
+
+@media (max-width: 767px){
+	.noo-tl-item {
+		width: 100%;
+	}
+	.noo-tl-item.right,
+	.noo-tl-item.left{
+		float: left;
+	}
+	.noo-tl-control{
+		top: 0px
+	}
+	.noo-tl-item.left .noo-tl-control{
+    	 right: 50%;
+    	 margin-right: -12px;
+	}
+	.noo-tl-item.right .noo-tl-control{
+		 left: 50%;
+		 margin-left: -12px;
+	}
+	
+	.noo-tl-item.right .noo-tl-info,
+	.noo-tl-item.left .noo-tl-info{
+		margin:40px 0 0 0;
+	}
+	
+	.noo-tl-item.left .arrow,
+	.noo-tl-item.right .arrow
+	{
+		border-bottom-color: #5C5C5C;
+	    border-left-color: transparent;
+	    border-right-color: transparent;
+	    border-width: 0 10px 10px;
+	    left: 50%;
+	    margin-left: -10px;
+	    margin-top: 0;
+	    top: -10px;
+	}
+	.noo-tl-item.right .arrow:after,
+	.noo-tl-item.left .arrow:after{
+		border-width: 0 11px 11px;
+		border-bottom-color: rgba(0, 0, 0, 0.25);
+		top: -1px;
+		left: -11px;
+	}
+	.noo-tl-item .noo-tl-time{
+		top:0
+	}
+	.noo-tl-item.left .noo-tl-time{
+		 left: 50%;
+	}
+	.noo-tl-item.right .noo-tl-time{
+		 right: 50%;
+	}
+}

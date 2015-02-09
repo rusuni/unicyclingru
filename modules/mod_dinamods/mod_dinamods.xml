@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.0"
+	client="site"
+	method="upgrade">
+	<name>Dinamod Tabs module</name>
+	<author>Jesus Vargas</author>
+	<creationDate>Jun 2009</creationDate>
+	<copyright>Copyright (C) 2005 - 2011 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>chuzky@gmail.com</authorEmail>
+	<authorUrl>http://www.joomlahill.com</authorUrl>
+	<version>2.1</version>
+	<description>MOD_DINAMODS_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_dinamods">mod_dinamods.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+		<folder>js</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			
+				<field
+					name="position"
+					type="text"
+					default="dinamod"
+					label="MOD_DINAMODS_FIELD_NEW_POSITION"
+					description="MOD_DINAMODS_FIELD_NEW_POSITION_DESC" />
+					
+				<field
+					name="tabs_pos"
+					type="radio"
+					class="btn-group"
+					default="top"
+					label="MOD_DINAMODS_FIELD_DISPLAY_TABS"
+					description="MOD_DINAMODS_FIELD_DISPLAY_TABS_DESC">
+					<option
+						value="top">MOD_DINAMODS_OPTION_ON_TOP</option>
+					<option
+						value="bottom">MOD_DINAMODS_OPTION_ON_BOTTOM</option>
+				</field>
+				
+				<field
+					name="change"
+					type="list"
+					default="0"
+					label="MOD_DINAMODS_FIELD_SWITCH_TABS"
+					description="MOD_DINAMODS_FIELD_SWITCH_TABS_DESC">
+					<option
+						value="0">MOD_DINAMODS_OPTION_ON_CLICK</option>
+					<option
+						value="1">MOD_DINAMODS_OPTION_ON_MOUSE_OVER</option>
+				</field>
+				
+				<field
+					name="slider"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="MOD_DINAMODS_FIELD_AUTO_ROTATE"
+					description="MOD_DINAMODS_FIELD_AUTO_ROTATE_DESC">
+					<option
+						value="0">JNO</option>
+					<option
+						value="1">JYES</option>
+				</field>
+				
+				<field
+					name="speed"
+					type="text"
+					default="3000"
+					label="MOD_DINAMODS_FIELD_ROTATION_DELAY"
+					description="MOD_DINAMODS_FIELD_ROTATION_DELAY_DESC" />
+					
+				<field
+					name="width"
+					type="text"
+					default="auto"
+					label="MOD_DINAMODS_FIELD_WIDTH"
+					description="MOD_DINAMODS_FIELD_WIDTH_DESC" />
+					
+				<field
+					name="height"
+					type="text"
+					default="auto"
+					label="MOD_DINAMODS_FIELD_HEIGHT"
+					description="MOD_DINAMODS_FIELD_HEIGHT_DESC" />
+					
+				<field
+					name="padding"
+					type="text"
+					default="5px"
+					label="MOD_DINAMODS_FIELD_PADDING"
+					description="MOD_DINAMODS_FIELD_PADDING_DESC" />
+					
+				<field
+					name="bgcolor"
+					type="text"
+					default="#FFFFFF"
+					label="MOD_DINAMODS_FIELD_BG_COLOR"
+					description="MOD_DINAMODS_FIELD_BG_COLOR_DESC" />
+					
+				<field
+					name="border"
+					type="text"
+					default="1px solid #CCCCCC"
+					label="MOD_DINAMODS_FIELD_BORDER"
+					description="MOD_DINAMODS_FIELD_BORDER_DESC" />
+					
+				<field
+					name="tab_bgcolor"
+					type="text"
+					default="#F6F6F6"
+					label="MOD_DINAMODS_FIELD_TABS_BG_COLOR"
+					description="MOD_DINAMODS_FIELD_TABS_BG_COLOR_DESC" />
+					
+				<field
+					name="tab_font"
+					type="text"
+					default="bold 13px Arial"
+					label="MOD_DINAMODS_FIELD_TABS_FONT_STYLE"
+					description="MOD_DINAMODS_FIELD_TABS_FONT_STYLE_DESC" />
+					
+				<field
+					name="tab_font_color"
+					type="text"
+					default="#000000"
+					label="MOD_DINAMODS_FIELD_TABS_FONT_COLOR"
+					description="MOD_DINAMODS_FIELD_TABS_FONT_COLOR_DESC" />
+					
+				<field
+					name="tab_padding"
+					type="text"
+					default="5px 11px 5px 11px"
+					label="MOD_DINAMODS_FIELD_TABS_PADDING"
+					description="MOD_DINAMODS_FIELD_TABS_PADDING_DESC" />
+					
+				<field
+					name="tab_margin_left"
+					type="text"
+					default="0"
+					label="MOD_DINAMODS_FIELD_TABS_LEFT_MARGIN"
+					description="MOD_DINAMODS_FIELD_TABS_LEFT_MARGIN_DESC" />
+					
+				<field
+					name="tab_margin_right"
+					type="text"
+					default="0"
+					label="MOD_DINAMODS_FIELD_TABS_RIGHT_MARGIN"
+					description="MOD_DINAMODS_FIELD_TABS_RIGHT_MARGIN_DESC" />
+					
+				<field
+					name="sel_tab_bgcolor"
+					type="text"
+					default="#FFFFFF"
+					label="MOD_DINAMODS_FIELD_SEL_TAB_BG_COLOR"
+					description="MOD_DINAMODS_FIELD_SEL_TAB_BG_COLOR_DESC" />
+					
+				<field
+					name="sel_tab_font_color"
+					type="text"
+					default="#135CAE"
+					label="MOD_DINAMODS_FIELD_SEL_TAB_FONT_COLOR"
+					description="MOD_DINAMODS_FIELD_SEL_TAB_FONT_COLOR_DESC" />
+					
+				<field
+					name="hover_tab_font_color"
+					type="text"
+					default="#135CAE"
+					label="MOD_DINAMODS_FIELD_HOVER_TAB_FONT_COLOR"
+					description="MOD_DINAMODS_FIELD_HOVER_TAB_FONT_COLOR_DESC" />
+					
+				<field
+					name="hover_tab_bgcolor"
+					type="text"
+					default="#FFFFFF"
+					label="MOD_DINAMODS_FIELD_HOVER_TAB_BG_COLOR"
+					description="MOD_DINAMODS_FIELD_HOVER_TAB_BG_COLOR_DESC" />
+					
+			</fieldset>
+
+			<fieldset
+				name="advanced">
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+										
+				<field
+					name="tab_borderr"
+					type="text"
+					default=""
+					label="MOD_DINAMODS_FIELD_TABS_BORDER_RADIUS"
+					description="MOD_DINAMODS_FIELD_TABS_BORDER_RADIUS_DESC" />
+															
+				<field
+					name="borderr"
+					type="text"
+					default=""
+					label="MOD_DINAMODS_FIELD_BORDER_RADIUS"
+					description="MOD_DINAMODS_FIELD_BORDER_RADIUS_DESC" />
+					
+				<field
+					name="module_chrome"
+					type="text"
+					default=""
+					label="MOD_DINAMODS_FIELD_MODULE_STYLE"
+					description="MOD_DINAMODS_FIELD_MODULE_STYLE_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				
+				<field
+					name="tracker"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="MOD_DINAMODS_FIELD_ENABLE_ANALYTICS"
+					description="MOD_DINAMODS_FIELD_ENABLE_ANALYTICS_DESC">
+					<option
+						value="0">JNO</option>
+					<option
+						value="1">JYES</option>
+				</field>
+				
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="itemid">
+					<option
+						value="itemid"></option>
+				</field>
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>

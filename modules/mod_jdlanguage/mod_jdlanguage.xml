@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>jdlanguage</name>
+	<creationDate>March 2011</creationDate>
+	<author>ITronic Harald Leithner</author>
+	<authorEmail>joomla@itronic.at</authorEmail>
+	<authorUrl>http://joomla@itronic.at</authorUrl>
+	<copyright>(C) 2012 Harald Leithner All rights reserved.</copyright>
+	<license>GNU General Public License Version 3.</license>	
+	<version>1.3.1</version>
+	<packager>ITronic Harald Leithner</packager>
+	<packagerurl>http://joomla.itronic.at</packagerurl>	
+	<description>MOD_JDLANGUAGE_XML_DESCRIPTION</description>
+	<files folder="modules/mod_jdlanguage">
+		<filename module="mod_jdlanguage">mod_jdlanguage.php</filename>
+		<folder>tmpl</folder>
+		<folder>language</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_jdlanguage.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="currentlanguage"
+					type="list"
+					filter="int"
+					default="1"
+					label="MOD_JDLANGUAGE_SHOW_CURRENT_LANGUAGE_LABEL"
+					description="MOD_JDLANGUAGE_SHOW_CURRENT_LANGUAGE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="alternatetag"
+					type="list"
+					filter="int"
+					default="1"
+					label="MOD_JDLANGUAGE_ADD_ALTERNATE_TAG_LABEL"
+					description="MOD_JDLANGUAGE_ADD_ALTERNATE_TAG_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+        <field
+          name="layout_style"
+          type="list"
+          filter="cmd"
+          description="MOD_JDLANGUAGE_STYLE_DESC"
+          default="text"
+          label="MOD_JDLANGUAGE_STYLE_LABEL">
+          <option value="text">MOD_JDLANGUAGE_TEXT</option>
+          <option value="flag">MOD_JDLANGUAGE_FLAG</option>
+          <option value="text_flag">MOD_JDLANGUAGE_TEXT_FLAG</option>
+          <option value="flag_text">MOD_JDLANGUAGE_FLAG_TEXT</option>
+        </field>
+        <field
+          name="update_hash"
+          type="list"
+          filter="int"
+          default="1"
+          label="MOD_JDLANGUAGE_UPDATE_HASH_LABEL"
+          description="MOD_JDLANGUAGE_UPDATE_HASH_DESC">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+        </field>
+      </fieldset>
+      <fieldset
+        name="advanced">
+        <field
+          name="tag_id"
+          type="text"
+          label="MOD_JDLANGUAGE_FIELD_TAG_ID_LABEL"
+          description="MOD_MENU_FIELD_TAG_ID_DESC" />
+
+        <field
+          name="class_sfx"
+          type="text"
+          label="MOD_JDLANGUAGE_FIELD_CLASS_LABEL"
+          description="MOD_MENU_FIELD_CLASS_DESC" />
+
+        <field
+          name="layout"
+          type="modulelayout"
+          label="JFIELD_ALT_LAYOUT_LABEL"
+          description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+        <field
+          name="moduleclass_sfx"
+          type="textarea" rows="3"
+          label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+          description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+      </fieldset>
+		</fields>
+	</config>
+
+</extension>

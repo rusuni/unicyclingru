@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content" method="upgrade">
+    <name>PLG_CONTENT_ADMIRORCOLUMNIZER</name>
+    <author>Igor Kekeljevic and Nikola Vasiljevski</author>
+    <creationDate>29/07/2013</creationDate>	
+    <copyright>This extension in released under the GNU/GPL License - http://www.gnu.org/copyleft/gpl.html</copyright>
+    <authorEmail></authorEmail>
+    <authorUrl>http://www.admiror-design-studio.com</authorUrl>
+    <version>3.5</version>
+    <description>PLG_CONTENT_ADMIRORCOLUMNIZER_XML_DESCRIPTION</description>
+    <scriptfile>admirorcolumnizer.scriptfile.php</scriptfile>
+    <params>  
+
+        <param name="ac_textAlign" type="list" default="justify" label="AC_TEXTALIGN_LABEL" description="AC_TEXTALIGN_DESC">
+            <option value="left">AC_LEFT</option>
+            <option value="right">AC_RIGHT</option>
+            <option value="center">AC_CENTER</option>
+            <option value="justify">AC_JUSTIFY</option>
+        </param>
+
+        <param name="ac_vertAlign" type="list" default="top" label="AC_VERTALIGN_LABEL" description="AC_VERTALIGN_DESC">
+            <option value="top">AC_TOP</option>
+            <option value="middle">AC_MIDDLE</option>
+            <option value="bottom">AC_BOTTOM</option>
+        </param>
+
+        <param name="ac_spacing" type="text" default="10" label="AC_SPACING_LABEL" description="AC_SPACING_DESC" />	
+
+        <param name="ac_hyphenator" type="list" default="1" label="AC_HYPHENATOR_LABEL" description="AC_HYPHENATOR_DESC">
+            <option value="1">AC_ON</option>
+            <option value="0">AC_OFF</option>
+        </param>
+
+        <param name="ac_brake_code" type="text" default="ACBR" label="AC_BRAKE_CODE" description="AC_BRAKE_CODE_DESC" />
+
+    </params>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+
+                <field name="ac_textAlign" type="list" default="left" label="AC_TEXTALIGN_LABEL" description="AC_TEXTALIGN_DESC">
+                    <option value="left">AC_LEFT</option>
+                    <option value="right">AC_RIGHT</option>
+                    <option value="center">AC_CENTER</option>
+                    <option value="justify">AC_JUSTIFY</option>
+                </field>
+
+                <field name="ac_vertAlign" type="list" default="top" label="AC_VERTALIGN_LABEL" description="AC_VERTALIGN_DESC">
+                    <option value="top">AC_TOP</option>
+                    <option value="middle">AC_MIDDLE</option>
+                    <option value="bottom">AC_BOTTOM</option>
+                </field>
+
+                <field name="ac_spacing" type="text" default="10" label="AC_SPACING_LABEL" description="AC_SPACING_DESC"/>
+
+                <field name="ac_hyphenator" type="list" default="1" label="AC_HYPHENATOR_LABEL" description="AC_HYPHENATOR_DESC">
+                    <option value="1">AC_ON</option>
+                    <option value="0">AC_OFF</option>
+                </field>
+
+                <field name="ac_brake_code" type="text" default="ACBR" label="AC_BRAKE_CODE" description="AC_BRAKE_CODE_DESC" />
+
+            </fieldset>
+        </fields>
+    </config>
+    <files>
+        <folder plugin="admirorcolumnizer">admirorcolumnizer</folder>
+        <filename plugin="admirorcolumnizer">admirorcolumnizer.php</filename>
+        <filename plugin="admirorcolumnizer">index.html</filename>		
+    </files>
+    <!-- Site Main Media File Copy Section -->
+    <media destination="plg_admirorcolumnizer">
+        <filename>media/logo.jpg</filename>
+        <filename>media/support-projects.jpg</filename>
+        <filename>media/index.html</filename>
+    </media>
+    <languages folder="language/en-GB/">
+        <language tag="en-GB">en-GB.plg_content_admirorcolumnizer.ini</language>
+        <language tag="en-GB">en-GB.plg_content_admirorcolumnizer.sys.ini</language>
+    </languages>
+</extension>
