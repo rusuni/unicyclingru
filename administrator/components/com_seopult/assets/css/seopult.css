@@ -1,0 +1,8 @@
+div.removeMsg
+{
+    width: 16px;
+    height: 16px;
+    background: url(../images/cancel.png);
+    cursor: pointer;
+    float: right;
+}

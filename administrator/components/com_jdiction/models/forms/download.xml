@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details"
+		addfieldpath="/libraries/jdiction/form/fields"
+		position="left"
+	>
+		<field name="language" type="language"
+			label="COM_JDICTION_SOURCE_LANGUAGE_LABEL" description="COM_JDICTION_SOURCE_LANGUAGE_DESC"
+			class="inputbox" size="1" default="1" >
+		</field>
+
+    <field name="targetlanguage" type="language"
+           label="COM_JDICTION_TARGET_LANGUAGE_LABEL" description="COM_JDICTION_TARGET_LANGUAGE_DESC"
+           class="inputbox" size="1" default="1" >
+    </field>
+
+		<field name="filetype" type="list"
+			label="COM_JDICTION_FILETYPE" description="COM_JDICTION_THE_TYPE_OF_THE_TRANSLATION_DOCUMENT"
+			class="inputbox" size="1" default="csv" >
+			<option value="CSV">CSV</option>
+      <option value="XLIFF">XLIFF</option>
+		</field>
+		
+		<field name="deduplicate" type="list"
+			label="COM_JDICTION_DEDUPLICATE_LABEL" description="COM_JDICTION_DEDUPLICATE_DESC"
+			class="inputboy" size="1" default="1">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field name="tables" type="jdtables"
+			label="COM_JDICTION_TABLES" description="COM_JDICTION_TABLES_DESC"
+			class="inputbox" size="8" multiple="true" >
+		</field>
+
+	</fieldset>
+
+</form>

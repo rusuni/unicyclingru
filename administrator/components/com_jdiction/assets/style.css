@@ -1,0 +1,43 @@
+
+.icon-32-jdiction-component { 
+	background-image: url("icon-32-translate.png");
+}
+
+.icon-32-jdiction-component { 
+	background-image: url("icon-32-translate.png");
+}
+
+.icon-48-jdiction-component { 
+	background-image: url("icon-48-translate.png");
+}
+
+.icon-48-jdiction-translation, .icon-48-jdiction-translations {
+	background-image: url("icon-48-translate.png");
+}
+
+.icon-48-jdiction-tools {
+	background-image: url("icon-48-tools.png");
+}
+
+.icon-48-jdiction-import { 
+	background-image: url("icon-48-import.png");
+}
+
+.icon-48-jdiction-export { 
+	background-image: url("icon-48-export.png");
+}
+
+.jdiction-ok {
+  color: green;
+}
+
+.jdiction-warning {
+  color: #ff8c00;
+  font-weight: bold;
+}
+
+.jdiction-error {
+  color: red;
+  font-weight: bold;
+}
+

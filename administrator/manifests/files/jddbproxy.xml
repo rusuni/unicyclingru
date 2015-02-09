@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="file" version="2.5" method="upgrade">
+	<name>jdiction_dbproxy</name>
+	<description>JDiction Database Proxy</description>
+	<creationDate>March 2011</creationDate>
+	<author>ITronic Harald Leithner</author>
+	<authorEmail>joomla@itronic.at</authorEmail>
+	<authorUrl>http://jdiction.org</authorUrl>
+	<copyright>(C) 2013 Harald Leithner All rights reserved.</copyright>
+	<license>GNU General Public License Version 3.</license>
+	<version>1.3.1</version>
+
+	<scriptfile>jddbproxy.install.php</scriptfile>
+
+	<fileset>
+    <files>
+      <file>jddbproxy.install.php</file>
+    </files>
+    <!-- Joomla 2.5 -->
+    <files folder="libraries/joomla/database/database" target="libraries/joomla/database/database">
+      <file>jdiction_mysqli.php</file>
+    </files>
+    <!-- Joomla 3.0 -->
+		<files folder="libraries/joomla/database/driver" target="libraries/joomla/database/driver">
+			<file>jdiction_mysqli.php</file>
+		</files>
+	</fileset>
+	
+	<dependencies>
+		<dependency type="platform" name="joomla" operator="=" version="2.5" />
+	</dependencies>	
+</extension>

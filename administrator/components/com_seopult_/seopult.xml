@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+    <name>com_seopult</name>
+    <creationDate>2012</creationDate>
+    <copyright>Copyright (C) 2012. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>Mitrich</author>
+    <authorEmail>mitrich@redsoft.ru</authorEmail>
+    <authorUrl>http://redsoft.ru</authorUrl>
+    <version>1.0.0</version>
+    <description>COM_SEOPULT_XML_DESCRIPTION</description>
+
+    <administration>
+        <menu img="components/com_seopult/assets/images/s_com_seopult.png" >COM_SEOPULT</menu>
+        <submenu>
+            
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>seopult.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <folder>libs</folder>
+        </files>
+        <languages folder="administrator">
+            <language tag="en-GB">language/en-GB.com_seopult.ini
+            </language>
+            <language tag="en-GB">language/en-GB.com_seopult.sys.ini
+            </language>
+            <language tag="ru-RU">language/ru-RU.com_seopult.ini
+            </language>
+            <language tag="ru-RU">language/ru-RU.com_seopult.sys.ini
+            </language>
+        </languages>
+    </administration>
+</extension>
+
